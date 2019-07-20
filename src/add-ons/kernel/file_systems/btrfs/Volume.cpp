@@ -272,7 +272,7 @@ Volume::Name() const
 status_t
 Volume::Mount(const char* deviceName, uint32 flags)
 {
-	flags |= B_MOUNT_READ_ONLY;
+	// flags |= B_MOUNT_READ_ONLY;
 		// we only support read-only for now
 
 	if ((flags & B_MOUNT_READ_ONLY) != 0) {
